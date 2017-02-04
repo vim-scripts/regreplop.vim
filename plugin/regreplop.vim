@@ -1,5 +1,5 @@
 "=============================================================================
-" regreplop.vim - a operator to replace something with a register
+" regreplop.vim - an operator to replace something with a register
 "=============================================================================
 "
 " Author:  Takahiro SUZUKI <takahiro.suzuki.ja@gmDELETEMEail.com>
@@ -11,16 +11,16 @@
 "
 "-----------------------------------------------------------------------------
 " Description:
-"   This plugin provides a operator to replace something(motion/visual) with a
+"   This plugin provides an operator to replace something(motion/visual) with a
 "   specified register.
 "   By default, the operator is mapped at
 "     <Plug>ReplaceMotion  " for normal mode
 "     <Plug>ReplaceLine    " for normal mode (replace a line)
 "     <Plug>ReplaceVisual  " for visual mode
-"   and if there are no key mapping for <C-K>, <C-K> is mapped to these
+"   and if there are no key mappings for <C-K>, <C-K> is mapped to these
 "   operators. (and <C-K><C-K> for ReplaceLine)
 "
-"   If you want to map them to another keys, add like below in your vimrc.
+"   If you want to map them to other keys, add the lines below in your vimrc.
 "     nmap YOURKEY <Plug>ReplaceMotion
 "     nmap YOURKEY <Plug>ReplaceLine
 "     vmap YOURKEY <Plug>ReplaceVisual
@@ -35,8 +35,8 @@
 "   in normal mode:
 "      <C-K>iw     " replaces inner word with default register
 "      "a<C-K>iw   " replaces inner word with register a
-"      <C-K>$      " replaces whole text right the cursor
-"      <C-K><C-K>  " replaces the line under cursor
+"      <C-K>$      " replaces whole text to right of the cursor
+"      <C-K><C-K>  " replaces the line under the cursor
 "
 "   in visual mode:
 "      <C-K>       " replace visual selection with default register
